@@ -1,6 +1,6 @@
 # Project Portofolio Website 
 🚀 See the result here :
-👉 [Mini Weather App](https://portofolio-website-blush.vercel.app/)
+👉 [Portofolio Website](https://portofolio-website-blush.vercel.app/)
 ## Project setup
 ```
 pnpm install
@@ -22,9 +22,8 @@ pnpm run lint
 ```
 
 <br>
-<br>
 
-###  Project Information
+##  Project Information
 **Language**
 - Javascript
   
