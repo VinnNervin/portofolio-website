@@ -20,5 +20,27 @@ pnpm run build
 pnpm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Project Mini Weather App 
+🚀 See the result here :
+👉 [Mini Weather App](https://portofolio-website-blush.vercel.app/)
+
+
+###  Project Information
+**Language**
+- Javascript
+  
+**Framework**
+- Vue js
+- Webpack (build tools)
+
+**Style**
+- Tailwind CSS
+
+**Library**
+- AOS 👉 [Source](https://michalsnik.github.io/aos/)
+- Bootsrap Icon 👉 [Source](https://icons.getbootstrap.com/)
+- DEVICON 👉 [Source](https://devicon.dev/)
+
+
+
+
