@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+* {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+:-webkit-scrollbar {
+  display: none; /* Chrome, Safari, and Opera */
+}
+
+::selection {
+  background-color: rgba(118, 117, 117, 0.436);
+}
+
+@layer base {
+  .social-media-links {
+    @apply hover:scale-125 transform-cpu transition-all duration-75 ease-in-out;
+  }
+
+  .navbar a {
+    @apply active:border-2 hover:border-2 hover:border-black border-2 border-transparent transition-all duration-75 ease-in px-3 py-1 rounded-full;
+  }
+
+  .social-svg {
+    @apply sm:w-28 w-16;
+  }
+
+  .social-svg,
+  .social-icon {
+    @apply hover:scale-110;
+  }
+}
