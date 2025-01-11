@@ -28,6 +28,7 @@
                     <img class="social-svg"
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" />
                     <i class="social-icon bg-white rounded-full devicon-canva-original colored"></i>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg" />
                 </div>
             </div>
         </div>
