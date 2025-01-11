@@ -20,7 +20,7 @@ pnpm run build
 pnpm run lint
 ```
 
-## Project Potofoio Website 
+## Project Portofolio Website 
 🚀 See the result here :
 👉 [Mini Weather App](https://portofolio-website-blush.vercel.app/)
 
