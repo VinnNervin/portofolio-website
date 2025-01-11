@@ -1,5 +1,6 @@
-# portofolio-website
-
+# Project Portofolio Website 
+🚀 See the result here :
+👉 [Mini Weather App](https://portofolio-website-blush.vercel.app/)
 ## Project setup
 ```
 pnpm install
@@ -20,10 +21,8 @@ pnpm run build
 pnpm run lint
 ```
 
-## Project Portofolio Website 
-🚀 See the result here :
-👉 [Mini Weather App](https://portofolio-website-blush.vercel.app/)
-
+<br>
+<br>
 
 ###  Project Information
 **Language**
