@@ -5,12 +5,12 @@
             <div class=" paragraph-about sm:pl-16 md:pl-5 p-5 bg-dark h-4/6 text-left text-white">
                 <p class=" first-part text-4xl sm:text-6xl uppercase font-bold pb-2">Hello!</p>
                 <p class="last-part text-justify text-base sm:text-xl">
-                    my name is charles lin a faculty of informatics student with a strong interest in web development
+                    My name is charles lin a faculty of informatics student with a strong interest in web development
                     and the IT field. started Active in the world of programming because it has an interest and love for
                     computer programs.
                     <br>
                     <br>
-                    I have my skills in frontend developer and web design. in the future I want to develop my skills and
+                    I have skills in frontend development and web design. in the future I want to develop my skills and
                     mastery in fullstack development. I have an interest in learning new things to produce innovative
                     and relevant solutions in the world of technology and technical skills.
                 </p>
