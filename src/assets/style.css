@@ -24,8 +24,21 @@
 }
 
 @layer base {
+  /* HERO */
+  .hero {
+    @apply bg-[url('@/assets/img/heroPattern.svg')] bg-no-repeat bg-cover bg-center w-full sm:h-[100vh] h-fit sm:flex-row flex flex-col-reverse;
+  }
+
+  .hero-section {
+    @apply sm:w-6/12 pr-14 w-full flex flex-col justify-center;
+  }
+
   .social-media-links {
     @apply hover:scale-125 transform-cpu transition-all duration-75 ease-in-out;
+  }
+  /* NAVBAR */
+  .navbar {
+    @apply z-10  flex absolute justify-end sm:justify-start items-center text-base sm:text-xl font-bold selection:gap-10 w-full sm:py-5 sm:px-10 px-5 font-montserrat uppercase my-2  text-black;
   }
 
   .navbar a {
