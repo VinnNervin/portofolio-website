@@ -38,7 +38,7 @@
   }
   /* NAVBAR */
   .navbar {
-    @apply z-10  flex absolute justify-end sm:justify-start items-center text-base sm:text-xl font-bold selection:gap-10 w-full sm:py-5 sm:px-10 px-5 font-montserrat uppercase my-2  text-black;
+    @apply z-10 absolute top-0 flex  justify-end sm:justify-start items-center text-base sm:text-xl font-bold selection:gap-10 w-full sm:py-5 sm:px-10 px-5 font-montserrat uppercase  text-black;
   }
 
   .navbar a {

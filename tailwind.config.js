@@ -13,7 +13,8 @@ export default {
       },
       backgroundColor: {
         'dark': '#1F242B',
-      }
+      },
+
     },
 
   },

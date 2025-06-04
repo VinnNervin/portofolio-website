@@ -5,3 +5,4 @@
         <router-link :to="'#contact'">contact</router-link>
     </nav>
 </template>
+<style></style>
