@@ -1,29 +1,31 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  scroll-behavior: smooth;
-}
+@theme {
+  --font-montserrat: "Montserrat", "sans-serif";
+  --font-popins: "Popins", "sans-serif";
+  --font-kanit: "Kanit", "sans-serif";
 
-* {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-}
-
-:-webkit-scrollbar {
-  display: none; /* Chrome, Safari, and Opera */
-}
-
-::selection {
-  background-color: rgba(118, 117, 117, 0.436);
+  --color-dark: #1f242b;
 }
 
 @layer base {
+  * {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+  }
+
+  :-webkit-scrollbar {
+    display: none; /* Chrome, Safari, and Opera */
+  }
+
+  ::selection {
+    background-color: rgba(118, 117, 117, 0.436);
+  }
   /* HERO */
   .hero {
     @apply bg-[url('@/assets/img/heroPattern.svg')] bg-no-repeat bg-cover bg-center w-full sm:h-[100vh] h-fit sm:flex-row flex flex-col-reverse;
@@ -38,7 +40,7 @@
   }
   /* NAVBAR */
   .navbar {
-    @apply z-10 absolute top-0 flex  justify-end sm:justify-start items-center text-base sm:text-xl font-bold selection:gap-10 w-full sm:py-5 sm:px-10 px-5 font-montserrat uppercase  text-black;
+    @apply z-10 absolute top-0 flex font-montserrat  justify-end sm:justify-start items-center text-base sm:text-xl font-bold selection:gap-10 w-full sm:py-5 sm:px-10 px-5  uppercase  text-black;
   }
 
   .navbar a {
