@@ -1,44 +1,5 @@
-# Project Portofolio Website 
-🚀 See the result here :
-👉 [Portofolio Website](https://portofolio-website-blush.vercel.app/)
-## Project setup
-```
-pnpm install
-```
+# Vue 3 + TypeScript + Vite
 
-### Compiles and hot-reloads for development
-```
-pnpm run serve
-```
+This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
 
-### Compiles and minifies for production
-```
-pnpm run build
-```
-
-### Lints and fixes files
-```
-pnpm run lint
-```
-
-<br>
-
-##  Project Information
-**Language**
-- Javascript
-  
-**Framework**
-- Vue js
-- Webpack (build tools)
-
-**Style**
-- Tailwind CSS
-
-**Library**
-- AOS 👉 [Source](https://michalsnik.github.io/aos/)
-- Bootsrap Icon 👉 [Source](https://icons.getbootstrap.com/)
-- DEVICON 👉 [Source](https://devicon.dev/)
-
-
-
-
+Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).

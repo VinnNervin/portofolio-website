@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+:-webkit-scrollbar {
+  display: none;
+}
+
+::selection {
+  background-color: rgba(118, 117, 117, 0.436);
+}
+
+/* Custom Animation for Marquee */
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-marquee {
+  display: inline-block;
+  animation: marquee 15s linear infinite;
+  padding-left: 100%; /* Start off-screen */
+}
+
+/* All component classes have been converted to Tailwind utility classes */

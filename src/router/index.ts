@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
-import NotFound from '@/views/Notfound.vue'
+import HomeView from '@/views/home-view.vue'
+import Notfound from '@/views/not-found.vue'
 const routes = [
   {
     path: '/',
@@ -10,7 +10,7 @@ const routes = [
   {
     path: '/:pathMatch(.*)*',
     name: 'NotFound',
-    component: NotFound,
+    component: Notfound,
   },
 ]
 
@@ -27,5 +27,7 @@ const router = createRouter({
     return { top: 0 }; // Default scroll ke atas
   },
 });
+
+
 
 export default router;
