@@ -47,7 +47,7 @@
 </template>
 
 <script setup lang="ts">
-import ImgHero from "./components/img-hero.vue";
+import ImgHero from "./components/Img-hero.vue"
 import NeoButton from "@/components/button/neo-button.vue";
 import { socialMediaUrl } from "./utils";
 import { createTimeline, stagger, splitText } from "animejs";
