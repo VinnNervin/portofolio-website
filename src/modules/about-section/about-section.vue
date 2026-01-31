@@ -1,6 +1,6 @@
 <template>
   <div id="about"
-    class="about-section bg-black bg-[url('@/assets/img/aboutPattern.svg')] bg-no-repeat bg-cover bg-center w-screen overflow-x-hidden md:h-[100vh] h-fit flex flex-col-reverse md:flex-row sm:bg-right md:bg-right xl:bg-center">
+    class="about-section bg-black bg-[url('@/assets/img/aboutPattern.svg')] bg-no-repeat bg-cover bg-center w-screen overflow-x-hidden md:h-screen h-fit flex flex-col-reverse md:flex-row sm:bg-right md:bg-right xl:bg-center">
     <div data-aos="fade-up" class="main-about md:w-8/12 w-full h-full flex justify-center items-center">
       <div
         class="paragraph-about sm:pl-16 md:pl-5 p-5 bg-dark h-4/6 text-left text-white hover:rounded-none rounded-r-3xl transform-cpu transition-all duration-75 ease-in">

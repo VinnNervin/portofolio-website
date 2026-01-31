@@ -10,6 +10,23 @@ export default defineConfig({
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
+  },
+  server: {
+    hmr: {
+      protocol: 'ws',
+      host: 'localhost',
+      port: 5173,
+      overlay: false,
+    },
+    watch: {
+      ignored: ['**/node_modules/**', '**/.git/**', '**/.vite/**'],
+      // Debounce to prevent rapid consecutive HMR updates
+      awaitWriteFinish: {
+        stabilityThreshold: 100,
+        pollInterval: 100,
+      },
+    },
+    middlewareMode: false,
   }
 })
 
