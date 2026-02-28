@@ -1,11 +1,11 @@
 <script setup lang="ts">
 import NavbarItems from './navbar-items.vue';
 const url = [
-  { to: 'home', name: 'Home' },
-  { to: 'about', name: 'About' },
-  { to: 'skills', name: 'Skills' },
-  { to: 'projects', name: 'Projects' },
-  { to: 'contact', name: 'Contact' },
+  { to: '#', name: 'Home' },
+  { to: '#about', name: 'About' },
+  { to: '#skills', name: 'Skills' },
+  { to: '#projects', name: 'Projects' },
+  { to: '#contact', name: 'Contact' },
 ]
 </script>
 
