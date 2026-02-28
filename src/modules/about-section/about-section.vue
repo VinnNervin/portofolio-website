@@ -1,73 +1,76 @@
 <template>
-  <div id="about"
-    class="about-section bg-black bg-[url('@/assets/img/aboutPattern.svg')] bg-no-repeat bg-cover bg-center w-screen overflow-x-hidden md:h-screen h-fit flex flex-col-reverse md:flex-row sm:bg-right md:bg-right xl:bg-center">
-    <div data-aos="fade-up" class="main-about md:w-8/12 w-full h-full flex justify-center items-center">
-      <div
-        class="paragraph-about sm:pl-16 md:pl-5 p-5 bg-dark h-4/6 text-left text-white hover:rounded-none rounded-r-3xl transform-cpu transition-all duration-75 ease-in">
-        <p class="first-part text-4xl sm:text-6xl uppercase font-bold pb-2">Hello<span>👋</span></p>
-        <p class="last-part text-justify text-base sm:text-xl">
-          My name is charles lin a faculty of informatics student with a strong interest
-          in web development and the IT field. started Active in the world of progsramming
-          because it has an interest and love for computer programs.
-          <br />
-          <br />
-          I have skills in frontend development and web design. in the future I want to
-          develop my skills and mastery in fullstack development. I have an interest in
-          learning new things to produce innovative and relevant solutions in the world of
-          technology and technical skills.
-        </p>
+  <section id="about"
+    class="min-h-screen bg-[#74C0FC] border-b-4 border-t-4 border-black relative overflow-hidden py-20 px-4 sm:px-10 flex items-center">
+
+    <div class="absolute inset-0 z-0 opacity-20"
+      style="background-image: linear-gradient(#000 2px, transparent 2px), linear-gradient(90deg, #000 2px, transparent 2px); background-size: 40px 40px;">
+    </div>
+
+    <!-- Container -->
+    <div class="max-w-7xl mx-auto w-full relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+
+      <!-- Left Side: Title & Visual -->
+      <div class="lg:col-span-5 flex flex-col gap-8">
+        <neo-button name="Who am i?" class-name="rotate-[-6deg] h- bg-white uppercase text-2x " padding="px-8 py-2" />
+
+        <div class="relative group">
+          <h1 class="text-8xl sm:text-9xl font-black text-white drop-shadow-[6px_6px_0_#000] leading-[0.8]">
+            ABOUT<br>ME.
+          </h1>
+
+        </div>
+
       </div>
+
+      <!-- Right Side: Content Cards -->
+      <div class="lg:col-span-7">
+        <AboutBio />
+      </div>
+
     </div>
-    <div data-aos="fade-left"
-      class="side-about-content w-full md:w-4/12 flex justify-start items-start pt-20 md:pt-40 md:pl-5 sm:pl-16 pl-6 h-full text-left text-4xl sm:text-6xl uppercase font-bold text-black">
-      <p class="hover:scale-110 transform-cpu transition-all duration-75 ease-in">
-        about <br />me
-      </p>
-    </div>
-  </div>
+  </section>
 </template>
 
+<script setup lang="ts">
+import { onMounted } from 'vue';
+import AboutBio from './components/about-bio.vue';
+import { createTimeline, stagger } from 'animejs';
+import NeoButton from '@/components/button/neo-button.vue';
+
+onMounted(() => {
+  createTimeline({
+    defaults: { ease: 'outExpo', duration: 1000 }
+  })
+    .add('#about h1', {
+      translateX: [-100, 0],
+      opacity: [0, 1],
+      delay: 200
+    })
+    .add('.neo-card', {
+      translateY: [100, 0],
+      opacity: [0, 1],
+      delay: stagger(200)
+    }, '-=800')
+    .init();
+});
+</script>
+
 <style scoped>
-span {
-  animation-name: wave;
-  animation-duration: 2.1s;
-  animation-iteration-count: infinite;
-  transform-origin: 70% 70%;
-  display: inline-block;
+.animate-bounce-horizontal {
+  animation: bounce-h 2s infinite;
 }
 
-@keyframes wave {
-  0% {
-    transform: rotate(0.0deg)
-  }
+@keyframes bounce-h {
 
-  10% {
-    transform: rotate(14deg)
-  }
-
-  20% {
-    transform: rotate(-8deg)
-  }
-
-  30% {
-    transform: rotate(14deg)
-  }
-
-  40% {
-    transform: rotate(-4deg)
+  0%,
+  100% {
+    transform: translateX(0);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
   }
 
   50% {
-    transform: rotate(10.0deg)
+    transform: translateX(25%);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
   }
-
-  60% {
-    transform: rotate(0.0deg)
-  }
-
-  100% {
-    transform: rotate(0.0deg)
-  }
-
 }
 </style>

@@ -1,11 +1,8 @@
 <template>
   <section id="home" class="min-h-screen bg-[#FEFAE0] flex flex-col font-sans relative overflow-hidden">
-    <!-- Main Content Grid -->
     <div class="flex-1 flex flex-col sm:flex-row">
-      <!-- Left Text Area -->
       <div
         class="flex-1 flex flex-col justify-center px-8 sm:px-16 py-12 relative border-r-0 sm:border-r-4 border-black">
-        <!-- Decorative Background Text -->
         <div
           class="absolute top-0 left-0 w-full h-full overflow-hidden opacity-[0.1] pointer-events-none flex flex-col justify-center items-center z-0">
           <div class="text-[20vw] font-black leading-none whitespace-nowrap">
@@ -27,14 +24,16 @@
           </h1>
 
           <p
-            class="text-xl font-bold border-l-8 border-black pl-6 mb-10 max-w-2xl bg-white/60 p-4 shadow-[4px_4px_0px_0px_rgba(0,0,0,0.1)]">
-            I am a student who is passionate about programming development and
-            IT field and major skills in frontend development and web design.
+            class="text-xl  border-l-8 border-black pl-6 mb-10 max-w-2xl bg-white/60 p-4 shadow-[4px_4px_0px_0px_rgba(0,0,0,0.1)]">
+            Hello There! I'm Charles Lin. A student plus also a fullstack web developer.
+            i'm currently studying at the faculty of informatics and working at a company as a fulltime fullstack
+            developer developing Software as a Service (SaaS) based on web technologies.
+
           </p>
         </div>
         <div class="flex gap-4">
           <neo-button v-for="(item, index) in socialMediaUrl" :key="index" :url="item.url" :name="item.name"
-            :className="item.className" />
+            :className="item.className" padding="px-4 py-2" />
         </div>
       </div>
 
@@ -47,7 +46,7 @@
 </template>
 
 <script setup lang="ts">
-import ImgHero from "./components/Img-hero.vue"
+import ImgHero from "./components/img-hero.vue"
 import NeoButton from "@/components/button/neo-button.vue";
 import { socialMediaUrl } from "./utils";
 import { createTimeline, stagger, splitText } from "animejs";
@@ -97,10 +96,6 @@ onMounted(() => {
       opacity: [0, 1],
       delay: stagger(100)
     }, '-=1200')
-    .add('.sm\\:w-5\\/12', {
-      translateX: [100, 0],
-      opacity: [0, 1],
-    }, '-=1400')
     .init();
 });
 </script>
