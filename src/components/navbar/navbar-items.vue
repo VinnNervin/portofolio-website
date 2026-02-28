@@ -7,10 +7,10 @@ const props = defineProps<{
 </script>
 
 <template>
-  <router-link :to="props.to"
+  <a :href="props.to"
     class="nav-items border-b-4 border-transparent hover:border-b-4 hover:border-b-black transition-all duration-75 ease-in">
     {{ props.name }}
-  </router-link>
+  </a>
 
 </template>
 

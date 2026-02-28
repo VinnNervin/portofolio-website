@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import AboutSection from '@/modules/about-section/about-section.vue';
 import FooterSection from '@/modules/footer-section/footer-section.vue';
 import HeroSection from '@/modules/hero-section/hero-section.vue';

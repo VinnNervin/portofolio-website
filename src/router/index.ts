@@ -1,12 +1,8 @@
-import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '@/views/home-view.vue'
+import { createRouter, createMemoryHistory } from 'vue-router'
+import HomeView from '@/views/home-view.vue';
 import Notfound from '@/views/not-found.vue'
 const routes = [
-  {
-    path: '/',
-    name: 'home',
-    component: HomeView
-  },
+  { path: '/', name: 'Home', component: HomeView },
   {
     path: '/:pathMatch(.*)*',
     name: 'NotFound',
@@ -15,17 +11,16 @@ const routes = [
 ]
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createMemoryHistory(),
   routes,
-  scrollBehavior(to) {
+  scrollBehavior(to, from, savedPosition) {
     if (to.hash) {
       return {
         el: to.hash,
-        behavior: 'smooth', // Animasi scroll
-      };
+        behavior: 'smooth'
+      }
     }
-    return { top: 0 }; // Default scroll ke atas
-  },
+  }
 });
 
 

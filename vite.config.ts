@@ -1,32 +1,18 @@
-import { defineConfig } from 'vite'
+import path from 'node:path'
 import tailwindcss from '@tailwindcss/vite'
 import vue from '@vitejs/plugin-vue'
-import { fileURLToPath } from 'url'
+import { defineConfig } from 'vite'
 
-// https://vite.dev/config/
 export default defineConfig({
-  plugins: [vue(), tailwindcss()],
+  base: './',
+  plugins: [
+    vue(),
+    tailwindcss(),
+  ],
   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url))
-    }
+      '@': path.resolve(__dirname, './src'),
+    },
   },
-  server: {
-    hmr: {
-      protocol: 'ws',
-      host: 'localhost',
-      port: 5173,
-      overlay: false,
-    },
-    watch: {
-      ignored: ['**/node_modules/**', '**/.git/**', '**/.vite/**'],
-      // Debounce to prevent rapid consecutive HMR updates
-      awaitWriteFinish: {
-        stabilityThreshold: 100,
-        pollInterval: 100,
-      },
-    },
-    middlewareMode: false,
-  }
-})
 
+})
