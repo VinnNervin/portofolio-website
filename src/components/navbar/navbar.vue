@@ -11,7 +11,7 @@ const url = [
 
 <template>
   <nav
-    class="z-10 bg-white absolute top-0 flex justify-end gap-4  border-b-2 border-black  sm:text-xl font-bold w-full  uppercase text-black">
+    class=" bg-white sticky z-50 top-0 flex justify-end gap-4  border-b-2 border-black  sm:text-xl font-bold w-full  uppercase text-black">
     <navbar-items v-for="(item, index) in url" :key="index" :to="item.to" :name="item.name" />
   </nav>
 </template>
